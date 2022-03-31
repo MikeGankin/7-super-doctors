@@ -2,5 +2,10 @@
     --main-blue: #458FF6;
     --black: #000000;
     --white: #ffffff;
-    --gray: #7D7987; 
+    --gray: #7D7987;
+    --h2: 48px;
+    --h3: 36px;
+    --main-text: 21px;
+    --description: 18px; 
+    --content-text: 16px;
 }
