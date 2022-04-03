@@ -1,6 +1,18 @@
 .articles {
     display: block;
     margin-bottom: 200px;
+    background-image: url('/img/bg element 2.png');
+    background-repeat: no-repeat;
+    background-position: -50% 50%;
+    @media (min-resolution: 2dppx) {
+        background-image: url("../img/some-img 2@2x.png");
+    };
+}
+
+.articles__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .artcles__list {
@@ -31,7 +43,7 @@
 
 .section__tagline--articles-tagline {
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
 }
 
 .articles__tagline {
@@ -57,4 +69,13 @@
     font-size: 16px;
     line-height: 28px;
     color: #7D7987;
+}
+
+.articles__link {
+    display: inline-block;
+    color: var(--main-blue);
+}
+
+.articles__link svg {
+    margin-left: 10px;
 }

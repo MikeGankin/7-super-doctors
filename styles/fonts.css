@@ -1,29 +1,29 @@
 @font-face {
-    font-family: 'Graphik';
-    src: local('Graphik Bold'), local('Graphik-Bold'),
-        url('../fonts/Graphik-Bold/Graphik-Bold.woff2') format('woff2'),
-        url('../fonts/Graphik-Bold/Graphik-Bold.woff') format('woff'),
-        url('fonts/Graphik-Bold/Graphik-Bold.ttf') format('truetype');
+    font-family: 'Graphik LCG';
+    src: local('Graphik LCG Bold'), local('Graphik-LCG-Bold'),
+        url('../fonts/GraphikLCG-Bold/GraphikLCG-Bold.woff2') format('woff2'),
+        url('../fonts/GraphikLCG-Bold/GraphikLCG-Bold.woff') format('woff'),
+        url('../fonts/GraphikLCG-Bold/GraphikLCG-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
-}
+  }
 
-@font-face {
-    font-family: 'Graphik';
-    src: local('Graphik Regular'), local('Graphik-Regular'),
-        url('../fonts/Graphik-Regular/Graphik-Regular.woff2') format('woff2'),
-        url('../fonts/Graphik-Regular/Graphik-Regular.woff') format('woff'),
-        url('../fonts/Graphik-Regular/Graphik-Regular.ttf') format('truetype');
+  @font-face {
+    font-family: 'Graphik LCG';
+    src: local('Graphik LCG Regular'), local('Graphik-LCG-Regular'),
+        url('../fonts/GraphikLCG-Regular/GraphikLCG-Regular.woff2') format('woff2'),
+        url('../fonts/GraphikLCG-Regular/GraphikLCG-Regular.woff') format('woff'),
+        url('../fonts/GraphikLCG-Regular/GraphikLCG-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-}
+  }
 
-@font-face {
-    font-family: 'Graphik';
-    src: local('Graphik Light'), local('Graphik-Light'),
-        url('../fonts/Graphik-Light/Graphik-Light.woff2') format('woff2'),
-        url('../fonts/Graphik-Light/Graphik-Light.woff') format('woff'),
-        url('../fonts/Graphik-Light/Graphik-Light.ttf') format('truetype');
+  @font-face {
+    font-family: 'Graphik LCG';
+    src: local('Graphik LCG Light'), local('Graphik-LCG-Light'),
+        url('../fonts/GraphikLCG-Light/GraphikLCG-Light.woff2') format('woff2'),
+        url('../fonts/GraphikLCG-Light/GraphikLCG-Light.woff') format('woff'),
+        url('../fonts/GraphikLCG-Light/GraphikLCG-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
-}
+  }

@@ -9,201 +9,242 @@
     <title>7 Докторов</title>
 </head>
 <body class="body">
-    <div class="container">
-        <header class="header">
-                <div class="header__logo">
-                    <img src="img/logo.svg" alt="логотип">
-                </div>
-                <nav class="header__nav nav">
-                    <ul class="nav__list">
-                        <li class="nav__list-item">
-                            <a class="nav__link nav__link--active" href="#">Главная</a>
-                        </li>
-                        <li class="nav__list-item item-dropdown">
-                            <div class="item-dropdown__wrapper">
-                                <button class="item-dropdown__btn">Выбрать специалиста</button>
+    <header class="header container">
+            <div class="header__logo">
+                <img src="img/logo.svg" alt="логотип">
+            </div>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a class="nav__link nav__link--active" href="#">Главная</a>
+                    </li>
+                    <li class="nav__list-item item-dropdown">
+                        <div class="item-dropdown__wrapper">
+                            <button class="item-dropdown__btn">Выбрать специалиста</button>
+                        <ul class="item-dropdown__list">
+                            <li class="item-dropdown__item">
+                                <a href="#">Стоматолог</a>
+                            </li>
+                            <li class="item-dropdown__item">
+                                <a href="#">Хирург</a>
+                            </li>
+                            <li class="item-dropdown__item">
+                                <a href="#">Уролог</a>
+                            </li>
+                            <li class="item-dropdown__item">
+                                <a href="#">Невропотолог</a>
+                            </li>
+                            <li class="item-dropdown__item">
+                                <a href="#">Психотерапевт</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="nav__list-item item-dropdown">
+                        <div class="item-dropdown__wrapper">
+                            <button class="item-dropdown__btn">Приложение</button>
                             <ul class="item-dropdown__list">
                                 <li class="item-dropdown__item">
-                                    <a href="#">Стоматолог</a>
+                                    <a href="#">iOS</a>
                                 </li>
                                 <li class="item-dropdown__item">
-                                    <a href="#">Хирург</a>
-                                </li>
-                                <li class="item-dropdown__item">
-                                    <a href="#">Уролог</a>
-                                </li>
-                                <li class="item-dropdown__item">
-                                    <a href="#">Невропотолог</a>
-                                </li>
-                                <li class="item-dropdown__item">
-                                    <a href="#">Психотерапевт</a>
+                                    <a href="#">Android</a>
                                 </li>
                             </ul>
-                            </div>
-                        </li>
-                        <li class="nav__list-item item-dropdown">
-                            <div class="item-dropdown__wrapper">
-                                <button class="item-dropdown__btn">Приложение</button>
-                                <ul class="item-dropdown__list">
-                                    <li class="item-dropdown__item">
-                                        <a href="#">iOS</a>
-                                    </li>
-                                    <li class="item-dropdown__item">
-                                        <a href="#">Android</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav__list-item item-dropdown">
-                            <div class="item-dropdown__wrapper"> 
-                                <button class="item-dropdown__btn">Рекомендации</button>
-                                <ul class="item-dropdown__list">
-                                    <li class="item-dropdown__item">
-                                        <a href="#">Recipes</a>
-                                    </li>
-                                    <li class="item-dropdown__item">
-                                        <a href="#">Medicines</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav__list-item">
-                            <a class="nav__link nav__link--active" href="#">О нас</a>
-                        </li>
-                    </ul>
-                </nav>
-        </header>
-        <main class="main">
-            <section class="section care">
-                <div class="section__content">
-                    <h2 class="section__tagline section__tagline--care-tagline">Virtual healthcare for you</h2>
-                    <p class="section__description section__description--care-description">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
-                    <button class="section__btn section__btn--care-btn">Consult today</button>
-                </div>
-                <img class="adaptive-img" src="img/care.png" srcset="img/care@2x.png 2x" width:="693px" height:="598px" loading="lazy" alt="Альт-текст">
-            </section>
-            <section class="section services">
-                <h3 class="section__tagline section__tagline--services-tagline">Our services</h3>
-                <p class="section__description section__description--services-description">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+                        </div>
+                    </li>
+                    <li class="nav__list-item item-dropdown">
+                        <div class="item-dropdown__wrapper"> 
+                            <button class="item-dropdown__btn">Рекомендации</button>
+                            <ul class="item-dropdown__list">
+                                <li class="item-dropdown__item">
+                                    <a href="#">Recipes</a>
+                                </li>
+                                <li class="item-dropdown__item">
+                                    <a href="#">Medicines</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__link nav__link--active" href="#">О нас</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <main class="main">
+        <section class="section care container">
+            <div class="section__content">
+                <h1 class="section__tagline section__tagline--care-tagline">Виртуальное здоровье уже сегодня</h1>
+                <p class="section__description section__description--care-description">7 Докторов предоставляет прогрессивное 
+                    и доступное медицинское обслуживание, доступное с мобильных устройств и онлайн
+                    для всех.</p>
+                <button class="section__btn section__btn--care-btn">Консультация</button>
+            </div>
+            <img class="adaptive-img" src="img/care.png" srcset="img/care@2x.png 2x" width:="693px" height:="598px" loading="lazy" alt="Альт-текст">
+        </section>
+        <section class="section services">
+            <div class="container services__conteiner">
+                <h3 class="section__tagline section__tagline--services-tagline">Наши сервисы</h3>
+                <p class="section__description section__description--services-description">Мы предоставляем вам лучший выбор для вас. 
+                    Отрегулируйте его в соответствии с вашими потребностями в области здравоохранения и убедитесь, что вы проходите лечение 
+                    у наших высококвалифицированных врачей. Вы можете проконсультироваться с нами, какой вид услуг подходит для вашего здоровья.</p>
                 <ul class="services__list">
                     <li class="services__item">
                         <img class="services__icon" src="img/search.svg" width="100" height="100" loading="lazy" alt="Изображение">
-                        <h4 class="services__name">Search doctor</h4>
-                        <p class="services__text">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+                        <h4 class="services__name">Поиск специалиста</h4>
+                        <p class="services__text">Выберите своего врача из тысяч специалистов, частных и муниципальных центров</p>
                     </li>
                     <li class="services__item">
                         <img class="services__icon" src="img/pharmacy.svg" width="100" height="100" loading="lazy" alt="Изображение">
-                        <h4 class="services__name">Online pharmacy</h4>
-                        <p class="services__text">Buy  your medicines with our mobile application with a simple delivery system</p>
+                        <h4 class="services__name">Интернет-аптека</h4>
+                        <p class="services__text">Покупайте лекарства с помощью нашего мобильного приложения, с простой системой доставки</p>
                     </li>
                     <li class="services__item">
                         <img class="services__icon" src="img/consultation.svg" width="100" height="100" loading="lazy" alt="Изображение">
-                        <h4 class="services__name">Consultation</h4>
-                        <p class="services__text">Free consultation with our trusted doctors and get the best recomendations</p>
+                        <h4 class="services__name">Консультации</h4>
+                        <p class="services__text">Бесплатные консультации с нашими проверенными врачами и лучшие рекомендации</p>
                     </li>
                     <li class="services__item">
                         <img class="services__icon" src="img/details.svg" width="100" height="100" loading="lazy" alt="Изображение">
-                        <h4 class="services__name">Details info</h4>
-                        <p class="services__text">Free consultation with our trusted doctors and get the best recomendations</p>
+                        <h4 class="services__name">Детальные отчеты</h4>
+                        <p class="services__text">Получайте подробные заключения на вашу почту</p>
                     </li>
                     <li class="services__item">
                         <img class="services__icon" src="img/emergency.svg" width="100" height="100" loading="lazy" alt="Изображение">
-                        <h4 class="services__name">Emergency care</h4>
-                        <p class="services__text">You can get 24/7 urgent care for yourself or your children and your lovely family</p>
+                        <h4 class="services__name">Экстреная помощь</h4>
+                        <p class="services__text">Вы можете получить неотложную помощь 24/7 для себя и своих близких</p>
                     </li>
                     <li class="services__item">
                         <img class="services__icon" src="img/tracking.svg" width="100" height="100" loading="lazy" alt="Изображение">
-                        <h4 class="services__name">Tracking</h4>
-                        <p class="services__text">Track and save your medical history and health data </p>
+                        <h4 class="services__name">Прогресса</h4>
+                        <p class="services__text">Отслеживайте и сохраняйте свою историю болезни и медицинские данные</p>
                     </li>
                 </ul>
-                <button class="section__btn section__btn--services-btn">Консультация</button>
-            </section>
-            <section class="section providers">
-                <div class="section__content">
-                    <h2 class="section__tagline section__tagline--providers-tagline">Leading healthcare providers</h2>
-                    <p class="section__description">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
-                    <button class="section__btn">Learn more</button>
-                </div>
-                <img class="adaptive-img" src="img/care.png" srcset="img/care@2x.png 2x" width:="693px" height:="598px" loading="lazy" alt="Альт-текст">
-            </section>
-            <section class="section mobile-app">
-                <div class="section__content">
-                    <h2 class="section__tagline section__tagline--mobile-app-tagline">Download our mobile apps</h2>
-                    <p class="section__description">Our dedicated patient engagement app and 
-                        web portal allow you to access information instantaneously (no tedeous form, long calls, 
-                        or administrative hassle) and securely</p>
-                    <button class="section__btn">Consult today</button>
-                </div>
-                <img class="adaptive-img" src="img/care.png" srcset="img/care@2x.png 2x" width:="693px" height:="598px" loading="lazy" alt="Альт-текст">
-            </section>
-            <section class="section feedback">
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide feed-1 feed">
-                        <h2 class="section__tagline section__tagline--feed-tagline">What our customer are saying</h2>
-                        <div class="feed__content">
-                            <div class="feed__avatar">
-                                <img src="img/Niga.png" srcset="img/Niga@2x.png 2x" width:="141px" height:="141px" loading="lazy" alt="Альт-текст">
-                                <div>
-                                    <p class="feed__name">Edward Newgate</p>
-                                    <p class="feed__company">Founder Circle</p>
-                                </div>
-                            </div>
-                            <div class="feed__text">
-                                <p>“Our dedicated patient engagement app and 
-                                web portal allow you to access information instantaneously (no tedeous form, long calls, 
-                                or administrative hassle) and securely”</p>
+                <button class="section__btn section__btn--services-btn">Подробнее</button>
+            </div>
+        </section>
+        <section class="section providers container">
+            <div class="section__content">
+                <h2 class="section__tagline section__tagline--providers-tagline">Ведущие поставщики медицинских услуг</h2>
+                <p class="section__description">7 Докторов предоставляет прогрессивное и доступное медицинское обслуживание, 
+                    доступное с мобильных устройств и онлайн для всех. Для нас это не просто работа. Мы гордимся решениями, 
+                    которые мы предоставляем.</p>
+                <button class="section__btn">Подробнее</button>
+            </div>
+            <img class="adaptive-img" src="img/care.png" srcset="img/care@2x.png 2x" width:="693px" height:="598px" loading="lazy" alt="Альт-текст">
+        </section>
+        <section class="section mobile-app container">
+            <div class="section__content">
+                <h2 class="section__tagline section__tagline--mobile-app-tagline">Загрузи наше мобильное приложение</h2>
+                <p class="section__description">Наше специальное приложение для взаимодействия с пациентами и
+                    веб-портал позволяют вам получать доступ к информации мгновенно (без утомительной формы, долгих звонков
+                    или административных хлопот) и безопасно.</p>
+                <button class="section__btn">Загрузить</button>
+            </div>
+            <img class="adaptive-img" src="img/care.png" srcset="img/care@2x.png 2x" width:="693px" height:="598px" loading="lazy" alt="Альт-текст">
+        </section>
+        <section class="section feedback">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide feed-1 feed">
+                    <h2 class="section__tagline section__tagline--feed-tagline">Что говорят наши клиенты</h2>
+                    <div class="feed__content">
+                        <div class="feed__avatar">
+                            <img src="img/Niga.png" srcset="img/Niga@2x.png 2x" width:="141px" height:="141px" loading="lazy" alt="Альт-текст">
+                            <div>
+                                <p class="feed__name">Эдвард Нововоротский</p>
+                                <p class="feed__company">Предприниматель</p>
                             </div>
                         </div>
+                        <div class="feed__text">
+                            <p>“Я устал от заполнений скучных форм и безконечных звонков менеджеров. 
+                                Теперь я могу спокойно зайти в приложение записаться к нужному специалисту 
+                                и сразу оплатить прием.”</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    ...
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                 </div>
-            </section>
-            <section class="section articles">
-                <h3 class="section__tagline section__tagline--articles-tagline">Check out our latest article</h3>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section class="section articles">
+            <div class="container articles__container">
+                <h3 class="section__tagline section__tagline--articles-tagline">Наши статьи</h3>
                 <ul class="artcles__list">
                     <li class="articles__item">
                         <img class="adaptive-img" src="img/image.png" srcset="img/image@2x.png 2x" width:="350px" height:="240px" loading="lazy" alt="Альт-текст">
                         <div class="articles__content">
-                            <h4 class="articles__tagline">Disease detection, check up in the laboratory</h4>
-                            <p class="articles__text">In this case, the role of the health laboratory is very important to do a disease detection...</p>
-                            <a class="articles__link" href="#">Read more</a>
+                            <h4 class="articles__tagline">Выявление заболеваний, обследование в лаборатории</h4>
+                            <p class="articles__text">В этом случае роль медицинской лаборатории очень важна для выявления заболевания...</p>
+                            <a class="articles__link" href="#">Читать дальше
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_63_2689)">
+                                    <path d="M1.37501 5.30357L11.9822 5.30357L9.65179 7.63393C9.33037 7.95536 9.33037 8.4375 9.65179 8.75893C9.97322 9.08036 10.4554 9.08036 10.7768 8.75893L14.4732 5.0625C14.7947 4.74107 14.7947 4.25893 14.4732 3.9375L10.7768 0.241071C10.4554 -0.0803579 9.97322 -0.080358 9.65179 0.241071C9.33037 0.5625 9.33037 1.04464 9.65179 1.36607L11.9822 3.69643L1.37501 3.69643C0.973222 3.69643 0.571436 4.01786 0.571436 4.5C0.571436 4.98214 0.973222 5.30357 1.37501 5.30357Z" fill="#4089ED"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_63_2689">
+                                    <rect width="14.1429" height="9" fill="white" transform="translate(14.7143 9) rotate(-180)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
                         </div>
                     </li>
                     <li class="articles__item">
                         <img class="adaptive-img" src="img/image 2.png" srcset="img/image 2@2x.png 2x" width:="350px" height:="240px" loading="lazy" alt="Альт-текст">
                         <div class="articles__content">
-                            <h4 class="articles__tagline">Herbal medicines that are safe for consumption</h4>
-                            <p class="articles__text">Herbal medicine is very widely used at this time because of its very good for your health...</p>
-                            <a class="articles__link" href="#">Read more</a>
+                            <h4 class="articles__tagline">Растительные лекарственные средства</h4>
+                            <p class="articles__text">Фитотерапия очень широко используется в настоящее время, потому что она очень полезна для вашего здоровья...</p>
+                            <a class="articles__link" href="#">Читать дальше
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_63_2689)">
+                                    <path d="M1.37501 5.30357L11.9822 5.30357L9.65179 7.63393C9.33037 7.95536 9.33037 8.4375 9.65179 8.75893C9.97322 9.08036 10.4554 9.08036 10.7768 8.75893L14.4732 5.0625C14.7947 4.74107 14.7947 4.25893 14.4732 3.9375L10.7768 0.241071C10.4554 -0.0803579 9.97322 -0.080358 9.65179 0.241071C9.33037 0.5625 9.33037 1.04464 9.65179 1.36607L11.9822 3.69643L1.37501 3.69643C0.973222 3.69643 0.571436 4.01786 0.571436 4.5C0.571436 4.98214 0.973222 5.30357 1.37501 5.30357Z" fill="#4089ED"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_63_2689">
+                                    <rect width="14.1429" height="9" fill="white" transform="translate(14.7143 9) rotate(-180)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
                         </div>
                     </li>
                     <li class="articles__item">
                         <img class="adaptive-img" src="img/image 3.png" srcset="img/image 3@2x.png 2x" width:="350px" height:="240px" loading="lazy" alt="Альт-текст">
                         <div class="articles__content">
-                            <h4 class="articles__tagline">Natural care for healthy facial skin</h4>
-                            <p class="articles__text">A healthy lifestyle should start from now and also for your skin health. There are some...</p>
-                            <a class="articles__link" href="#">Read more</a>
+                            <h4 class="articles__tagline">Естественный уход за здоровой кожей лица</h4>
+                            <p class="articles__text">Здоровый образ жизни должен начинаться с этого момента, а также для здоровья вашей кожи. Есть несколько...</p>
+                            <a class="articles__link" href="#">Читать дальше
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_63_2689)">
+                                    <path d="M1.37501 5.30357L11.9822 5.30357L9.65179 7.63393C9.33037 7.95536 9.33037 8.4375 9.65179 8.75893C9.97322 9.08036 10.4554 9.08036 10.7768 8.75893L14.4732 5.0625C14.7947 4.74107 14.7947 4.25893 14.4732 3.9375L10.7768 0.241071C10.4554 -0.0803579 9.97322 -0.080358 9.65179 0.241071C9.33037 0.5625 9.33037 1.04464 9.65179 1.36607L11.9822 3.69643L1.37501 3.69643C0.973222 3.69643 0.571436 4.01786 0.571436 4.5C0.571436 4.98214 0.973222 5.30357 1.37501 5.30357Z" fill="#4089ED"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_63_2689">
+                                    <rect width="14.1429" height="9" fill="white" transform="translate(14.7143 9) rotate(-180)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </a>
                         </div>
                     </li>
                 </ul>
-                <button class="section__btn section__btn--articles-btn">View all</button>
-            </section>
-        </main>
-    </div>
+                <button class="section__btn section__btn--articles-btn">Смотреть все</button>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer__logo">

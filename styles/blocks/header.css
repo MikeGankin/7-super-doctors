@@ -36,6 +36,8 @@
     top: calc(100% + 16px);
     left: -11px;
     z-index: 1;
+    opacity: 0;
+    display: none;
 }
 
 .item-dropdown__list::after {
@@ -64,6 +66,12 @@
 .nav__link:hover {
     background-color: var(--main-blue);
     color: white; 
+}
+
+.item-dropdown__btn:hover ~ .item-dropdown__list{
+    top: calc(100% + 5px);
+    opacity: 1;
+    display: block;
 }
 
 .item-dropdown__item a:hover {

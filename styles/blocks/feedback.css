@@ -46,7 +46,7 @@
 }
 
 .section__tagline--feed-tagline::after {
-    top: 75px;
+    top: 65px;
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
@@ -64,6 +64,18 @@
     font-size: 18px;
     color: white;
     margin: 0;
+}
+
+.swiper-wrapper {
+    height: 500px;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: unset;
 }
 
 .swiper-pagination-bullet {

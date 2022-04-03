@@ -2,6 +2,8 @@
     font-size: var(--h2);
     margin: 0 0 25px 0;
     text-align: left;
+    font-weight: 700;
+    line-height: var(--line-height);
 }
 
 .section__tagline--care-tagline::after {
@@ -11,6 +13,8 @@
 .section__description--care-description {
     text-align: left;
     margin: 0 0 45px 0;
+    font-size: 22px;
+    line-height: 32px;
 }
 
 .section__btn--care-btn {
