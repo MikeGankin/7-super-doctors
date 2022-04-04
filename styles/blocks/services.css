@@ -1,19 +1,24 @@
 .services {
     display: block;
-    background-image: url('/img/bg element.png');
+    background-image: url('/img/bg-element.png');
     background-repeat: no-repeat;
     background-position: -50% 50%;
-    @media (min-resolution: 2dppx) {
-        background-image: url("../img/some-img@2x.png");
-    };
 }
 
-.services__conteiner {
-    margin-bottom: 220px;
+@media (min-resolution: 2dppx) {
+    .services {
+        background-image: url('/img/bg-element@2x.png');
+    }
+};
+
+.services__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+}
+
+.section__tagline--services-tagline {
+    text-align: center;
 }
 
 .section__tagline--services-tagline::after {

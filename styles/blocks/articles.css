@@ -1,13 +1,16 @@
 .articles {
     display: block;
     margin-bottom: 200px;
-    background-image: url('/img/bg element 2.png');
+    background-image: url('/img/bg-element-2.png');
     background-repeat: no-repeat;
-    background-position: -50% 50%;
-    @media (min-resolution: 2dppx) {
-        background-image: url("../img/some-img 2@2x.png");
-    };
+    background-position: 100% 50%;
 }
+
+@media (min-resolution: 2dppx) {
+    .articles {
+        background-image: url('/img/bg-element-2@2x.png');
+    }
+};
 
 .articles__container {
     display: flex;

@@ -9,5 +9,5 @@
     --description: 18px; 
     --content-text: 16px;
     --line-height: 54px;
-    --transition: 0.75s cubic-bezier(0.075, 0.5, 1, 0)
+    --transition: 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }

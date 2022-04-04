@@ -21,3 +21,10 @@
     background-color: var(--main-blue);
     color: white;
 }
+
+.section__btn--care-btn:hover {
+    background-color: transparent;
+    color: var(--main-blue);
+    border-color: var(--main-blue);
+}
+

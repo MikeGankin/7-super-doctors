@@ -68,4 +68,10 @@ a {
     font-size: var(--description);
     font-weight: 700;
     cursor: pointer;
+    display: block;
+}
+
+.section__btn:hover {
+    background-color: var(--main-blue);
+    color: white;
 }

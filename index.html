@@ -20,8 +20,8 @@
                     </li>
                     <li class="nav__list-item item-dropdown">
                         <div class="item-dropdown__wrapper">
-                            <button class="item-dropdown__btn">Выбрать специалиста</button>
-                        <ul class="item-dropdown__list">
+                            <button class="item-dropdown__btn" data-path="one">Выбрать специалиста</button>
+                        <ul class="item-dropdown__list" data-target="one">
                             <li class="item-dropdown__item">
                                 <a href="#">Стоматолог</a>
                             </li>
@@ -42,8 +42,8 @@
                     </li>
                     <li class="nav__list-item item-dropdown">
                         <div class="item-dropdown__wrapper">
-                            <button class="item-dropdown__btn">Приложение</button>
-                            <ul class="item-dropdown__list">
+                            <button class="item-dropdown__btn" data-path="two">Приложение</button>
+                            <ul class="item-dropdown__list" data-target="two">
                                 <li class="item-dropdown__item">
                                     <a href="#">iOS</a>
                                 </li>
@@ -55,8 +55,8 @@
                     </li>
                     <li class="nav__list-item item-dropdown">
                         <div class="item-dropdown__wrapper"> 
-                            <button class="item-dropdown__btn">Рекомендации</button>
-                            <ul class="item-dropdown__list">
+                            <button class="item-dropdown__btn" data-path="three">Рекомендации</button>
+                            <ul class="item-dropdown__list" data-target="three">
                                 <li class="item-dropdown__item">
                                     <a href="#">Recipes</a>
                                 </li>
@@ -84,7 +84,7 @@
             <img class="adaptive-img" src="img/care.png" srcset="img/care@2x.png 2x" width:="693px" height:="598px" loading="lazy" alt="Альт-текст">
         </section>
         <section class="section services">
-            <div class="container services__conteiner">
+            <div class="container services__container">
                 <h3 class="section__tagline section__tagline--services-tagline">Наши сервисы</h3>
                 <p class="section__description section__description--services-description">Мы предоставляем вам лучший выбор для вас. 
                     Отрегулируйте его в соответствии с вашими потребностями в области здравоохранения и убедитесь, что вы проходите лечение 
