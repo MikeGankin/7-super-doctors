@@ -42,3 +42,7 @@
     font-size: 18px;
     color: #FFFFFF;
 }
+
+.footer__nav-list a:hover {
+    text-decoration: underline;
+}
