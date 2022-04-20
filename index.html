@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -10,75 +11,115 @@
 </head>
 <body class="body">
     <header class="header container">
-            <div class="header__logo">
-                <img src="img/logo.svg" alt="логотип">
-            </div>
-            <nav class="header__nav nav">
-                <ul class="nav__list">
-                    <li class="nav__list-item">
-                        <a class="nav__link nav__link--active" href="#">Главная</a>
-                    </li>
-                    <li class="nav__list-item item-dropdown">
-                        <div class="item-dropdown__wrapper">
-                            <button class="item-dropdown__btn" data-path="one">Выбрать специалиста</button>
-                        <ul class="item-dropdown__list" data-target="one">
-                            <li class="item-dropdown__item">
-                                <a href="#">Стоматолог</a>
-                            </li>
-                            <li class="item-dropdown__item">
-                                <a href="#">Хирург</a>
-                            </li>
-                            <li class="item-dropdown__item">
-                                <a href="#">Уролог</a>
-                            </li>
-                            <li class="item-dropdown__item">
-                                <a href="#">Невропотолог</a>
-                            </li>
-                            <li class="item-dropdown__item">
-                                <a href="#">Психотерапевт</a>
-                            </li>
-                        </ul>
-                        </div>
-                    </li>
-                    <li class="nav__list-item item-dropdown">
-                        <div class="item-dropdown__wrapper">
-                            <button class="item-dropdown__btn" data-path="two">Приложение</button>
-                            <ul class="item-dropdown__list" data-target="two">
-                                <li class="item-dropdown__item">
-                                    <a href="#">iOS</a>
-                                </li>
-                                <li class="item-dropdown__item">
-                                    <a href="#">Android</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav__list-item item-dropdown">
-                        <div class="item-dropdown__wrapper"> 
-                            <button class="item-dropdown__btn" data-path="three">Рекомендации</button>
-                            <ul class="item-dropdown__list" data-target="three">
-                                <li class="item-dropdown__item">
-                                    <a href="#">Recipes</a>
-                                </li>
-                                <li class="item-dropdown__item">
-                                    <a href="#">Medicines</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__link nav__link--active" href="#">О нас</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <img src="img/logo.svg" alt="логотип">
+        </div>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <div class="item-dropdown__wrapper">
+                        <button class="item-dropdown__btn" data-path="one">Выбрать специалиста
+                            <svg class="dropdown-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                <g>
+                                    <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                                </g>
+                                </svg>
+                        </button>
+                    <ul class="menu__dropdown dropdown" data-target="one">
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Стоматолог</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Хирург</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Уролог</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Невропотолог</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Психотерапевт</a>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <div class="item-dropdown__wrapper">
+                        <button class="item-dropdown__btn" data-path="one">Выбрать специалиста
+                            <svg class="dropdown-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                <g>
+                                    <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                                </g>
+                                </svg>
+                        </button>
+                    <ul class="menu__dropdown dropdown" data-target="one">
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Стоматолог</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Хирург</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Уролог</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Невропотолог</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Психотерапевт</a>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <div class="item-dropdown__wrapper">
+                        <button class="item-dropdown__btn" data-path="one">Выбрать специалиста
+                            <svg class="dropdown-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                <g>
+                                    <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                                </g>
+                                </svg>
+                        </button>
+                    <ul class="menu__dropdown dropdown" data-target="one">
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Стоматолог</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Хирург</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Уролог</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Невропотолог</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Психотерапевт</a>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">О нас</a>
+                </li>
+            </ul>
+            <button class="menu__button">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </button>
+        </nav>
     </header>
     <main class="main">
         <section class="section care container">
             <div class="section__content">
                 <h1 class="section__tagline section__tagline--care-tagline">Виртуальное здоровье уже сегодня</h1>
-                <p class="section__description section__description--care-description">7 Докторов предоставляет прогрессивное 
-                    и доступное медицинское обслуживание, доступное с мобильных устройств и онлайн
-                    для всех.</p>
+                <p class="section__description section__description--care-description">7&nbsp;Докторов предоставляет прогрессивное 
+                    и&nbsp;доступное медицинское обслуживание, доступное с&nbsp;мобильных устройств и&nbsp;онлайн для всех.</p>
                 <button class="section__btn section__btn--care-btn">Консультация</button>
             </div>
             <img class="adaptive-img" src="img/care.png" srcset="img/care@2x.png 2x" width:="693px" height:="598px" loading="lazy" alt="Альт-текст">
@@ -86,9 +127,10 @@
         <section class="section services">
             <div class="container services__container">
                 <h3 class="section__tagline section__tagline--services-tagline">Наши сервисы</h3>
-                <p class="section__description section__description--services-description">Мы предоставляем вам лучший выбор для вас. 
-                    Отрегулируйте его в соответствии с вашими потребностями в области здравоохранения и убедитесь, что вы проходите лечение 
-                    у наших высококвалифицированных врачей. Вы можете проконсультироваться с нами, какой вид услуг подходит для вашего здоровья.</p>
+                <p class="section__description section__description--services-description">Мы&nbsp;предоставляем вам лучший 
+                    выбор для вас. Отрегулируйте его в&nbsp;соответствии с&nbsp;вашими потребностями в&nbsp;области здравоохранения 
+                    и&nbsp;убедитесь, что вы&nbsp;проходите лечение у&nbsp;наших высококвалифицированных врачей. Вы&nbsp;можете 
+                    проконсультироваться с&nbsp;нами, какой вид услуг подходит для вашего здоровья.</p>
                 <ul class="services__list">
                     <li class="services__item">
                         <img class="services__icon" src="img/search.svg" width="100" height="100" loading="lazy" alt="Изображение">
@@ -132,7 +174,7 @@
                     которые мы предоставляем.</p>
                 <button class="section__btn">Подробнее</button>
             </div>
-            <img class="adaptive-img" src="img/care.png" srcset="img/care@2x.png 2x" width:="693px" height:="598px" loading="lazy" alt="Альт-текст">
+            <img class="adaptive-img" src="img/providers.png" srcset="img/providers@2x.png 2x" width:="693px" height:="598px" loading="lazy" alt="Альт-текст">
         </section>
         <section class="section mobile-app container">
             <div class="section__content">
@@ -142,19 +184,18 @@
                     или административных хлопот) и безопасно.</p>
                 <button class="section__btn">Загрузить</button>
             </div>
-            <img class="adaptive-img" src="img/care.png" srcset="img/care@2x.png 2x" width:="693px" height:="598px" loading="lazy" alt="Альт-текст">
+            <img class="adaptive-img" src="img/mobile-app.png" srcset="img/mobile-app@2x.png 2x" width:="693px" height:="598px" loading="lazy" alt="Альт-текст">
         </section>
         <section class="section feedback">
-            <!-- Slider main container -->
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide feed-1 feed">
+                  <!-- Slides -->
+                  <div class="swiper-slide feed feed-1">
                     <h2 class="section__tagline section__tagline--feed-tagline">Что говорят наши клиенты</h2>
                     <div class="feed__content">
                         <div class="feed__avatar">
-                            <img src="img/Niga.png" srcset="img/Niga@2x.png 2x" width:="141px" height:="141px" loading="lazy" alt="Альт-текст">
+                            <img class="adaptive-img" src="img/Niga.png" srcset="img/Niga@2x.png 2x" width:="141px" height:="141px" loading="lazy" alt="Альт-текст">
                             <div>
                                 <p class="feed__name">Эдвард Нововоротский</p>
                                 <p class="feed__company">Предприниматель</p>
@@ -166,18 +207,49 @@
                                 и сразу оплатить прием.”</p>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
+                  </div>
+                  <div class="swiper-slide feed feed-2">
+                    <h2 class="section__tagline section__tagline--feed-tagline">Что говорят наши клиенты</h2>
+                    <div class="feed__content">
+                        <div class="feed__avatar">
+                            <img class="adaptive-img" src="img/Niga.png" srcset="img/Niga@2x.png 2x" width:="141px" height:="141px" loading="lazy" alt="Альт-текст">
+                            <div>
+                                <p class="feed__name">Эдвард Нововоротский</p>
+                                <p class="feed__company">Предприниматель</p>
+                            </div>
+                        </div>
+                        <div class="feed__text">
+                            <p>“Я устал от заполнений скучных форм и безконечных звонков менеджеров. 
+                                Теперь я могу спокойно зайти в приложение записаться к нужному специалисту 
+                                и сразу оплатить прием.”</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide feed feed-3">
+                    <h2 class="section__tagline section__tagline--feed-tagline">Что говорят наши клиенты</h2>
+                    <div class="feed__content">
+                        <div class="feed__avatar">
+                            <img class="adaptive-img" src="img/Niga.png" srcset="img/Niga@2x.png 2x" width:="141px" height:="141px" loading="lazy" alt="Альт-текст">
+                            <div>
+                                <p class="feed__name">Эдвард Нововоротский</p>
+                                <p class="feed__company">Предприниматель</p>
+                            </div>
+                        </div>
+                        <div class="feed__text">
+                            <p>“Я устал от заполнений скучных форм и безконечных звонков менеджеров. 
+                                Теперь я могу спокойно зайти в приложение записаться к нужному специалисту 
+                                и сразу оплатить прием.”</p>
+                        </div>
+                    </div>
+                  </div>
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
-            
+              
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-            </div>
+              </div>
         </section>
         <section class="section articles">
             <div class="container articles__container">
@@ -189,13 +261,13 @@
                             <h4 class="articles__tagline">Выявление заболеваний, обследование в лаборатории</h4>
                             <p class="articles__text">В этом случае роль медицинской лаборатории очень важна для выявления заболевания...</p>
                             <a class="articles__link" href="#">Читать дальше
-                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="15" height="9" viewBox="0 0 15 9" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_63_2689)">
-                                    <path d="M1.37501 5.30357L11.9822 5.30357L9.65179 7.63393C9.33037 7.95536 9.33037 8.4375 9.65179 8.75893C9.97322 9.08036 10.4554 9.08036 10.7768 8.75893L14.4732 5.0625C14.7947 4.74107 14.7947 4.25893 14.4732 3.9375L10.7768 0.241071C10.4554 -0.0803579 9.97322 -0.080358 9.65179 0.241071C9.33037 0.5625 9.33037 1.04464 9.65179 1.36607L11.9822 3.69643L1.37501 3.69643C0.973222 3.69643 0.571436 4.01786 0.571436 4.5C0.571436 4.98214 0.973222 5.30357 1.37501 5.30357Z" fill="#4089ED"/>
+                                    <path d="M1.37501 5.30357L11.9822 5.30357L9.65179 7.63393C9.33037 7.95536 9.33037 8.4375 9.65179 8.75893C9.97322 9.08036 10.4554 9.08036 10.7768 8.75893L14.4732 5.0625C14.7947 4.74107 14.7947 4.25893 14.4732 3.9375L10.7768 0.241071C10.4554 -0.0803579 9.97322 -0.080358 9.65179 0.241071C9.33037 0.5625 9.33037 1.04464 9.65179 1.36607L11.9822 3.69643L1.37501 3.69643C0.973222 3.69643 0.571436 4.01786 0.571436 4.5C0.571436 4.98214 0.973222 5.30357 1.37501 5.30357Z"/>
                                     </g>
                                     <defs>
                                     <clipPath id="clip0_63_2689">
-                                    <rect width="14.1429" height="9" fill="white" transform="translate(14.7143 9) rotate(-180)"/>
+                                    <rect width="14.1429" height="9" transform="translate(14.7143 9) rotate(-180)"/>
                                     </clipPath>
                                     </defs>
                                 </svg>
@@ -208,13 +280,13 @@
                             <h4 class="articles__tagline">Растительные лекарственные средства</h4>
                             <p class="articles__text">Фитотерапия очень широко используется в настоящее время, потому что она очень полезна для вашего здоровья...</p>
                             <a class="articles__link" href="#">Читать дальше
-                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="15" height="9" viewBox="0 0 15 9" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_63_2689)">
-                                    <path d="M1.37501 5.30357L11.9822 5.30357L9.65179 7.63393C9.33037 7.95536 9.33037 8.4375 9.65179 8.75893C9.97322 9.08036 10.4554 9.08036 10.7768 8.75893L14.4732 5.0625C14.7947 4.74107 14.7947 4.25893 14.4732 3.9375L10.7768 0.241071C10.4554 -0.0803579 9.97322 -0.080358 9.65179 0.241071C9.33037 0.5625 9.33037 1.04464 9.65179 1.36607L11.9822 3.69643L1.37501 3.69643C0.973222 3.69643 0.571436 4.01786 0.571436 4.5C0.571436 4.98214 0.973222 5.30357 1.37501 5.30357Z" fill="#4089ED"/>
+                                    <path d="M1.37501 5.30357L11.9822 5.30357L9.65179 7.63393C9.33037 7.95536 9.33037 8.4375 9.65179 8.75893C9.97322 9.08036 10.4554 9.08036 10.7768 8.75893L14.4732 5.0625C14.7947 4.74107 14.7947 4.25893 14.4732 3.9375L10.7768 0.241071C10.4554 -0.0803579 9.97322 -0.080358 9.65179 0.241071C9.33037 0.5625 9.33037 1.04464 9.65179 1.36607L11.9822 3.69643L1.37501 3.69643C0.973222 3.69643 0.571436 4.01786 0.571436 4.5C0.571436 4.98214 0.973222 5.30357 1.37501 5.30357Z"/>
                                     </g>
                                     <defs>
                                     <clipPath id="clip0_63_2689">
-                                    <rect width="14.1429" height="9" fill="white" transform="translate(14.7143 9) rotate(-180)"/>
+                                    <rect width="14.1429" height="9" transform="translate(14.7143 9) rotate(-180)"/>
                                     </clipPath>
                                     </defs>
                                 </svg>
@@ -227,13 +299,13 @@
                             <h4 class="articles__tagline">Естественный уход за здоровой кожей лица</h4>
                             <p class="articles__text">Здоровый образ жизни должен начинаться с этого момента, а также для здоровья вашей кожи. Есть несколько...</p>
                             <a class="articles__link" href="#">Читать дальше
-                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="15" height="9" viewBox="0 0 15 9" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_63_2689)">
-                                    <path d="M1.37501 5.30357L11.9822 5.30357L9.65179 7.63393C9.33037 7.95536 9.33037 8.4375 9.65179 8.75893C9.97322 9.08036 10.4554 9.08036 10.7768 8.75893L14.4732 5.0625C14.7947 4.74107 14.7947 4.25893 14.4732 3.9375L10.7768 0.241071C10.4554 -0.0803579 9.97322 -0.080358 9.65179 0.241071C9.33037 0.5625 9.33037 1.04464 9.65179 1.36607L11.9822 3.69643L1.37501 3.69643C0.973222 3.69643 0.571436 4.01786 0.571436 4.5C0.571436 4.98214 0.973222 5.30357 1.37501 5.30357Z" fill="#4089ED"/>
+                                    <path d="M1.37501 5.30357L11.9822 5.30357L9.65179 7.63393C9.33037 7.95536 9.33037 8.4375 9.65179 8.75893C9.97322 9.08036 10.4554 9.08036 10.7768 8.75893L14.4732 5.0625C14.7947 4.74107 14.7947 4.25893 14.4732 3.9375L10.7768 0.241071C10.4554 -0.0803579 9.97322 -0.080358 9.65179 0.241071C9.33037 0.5625 9.33037 1.04464 9.65179 1.36607L11.9822 3.69643L1.37501 3.69643C0.973222 3.69643 0.571436 4.01786 0.571436 4.5C0.571436 4.98214 0.973222 5.30357 1.37501 5.30357Z"/>
                                     </g>
                                     <defs>
                                     <clipPath id="clip0_63_2689">
-                                    <rect width="14.1429" height="9" fill="white" transform="translate(14.7143 9) rotate(-180)"/>
+                                    <rect width="14.1429" height="9" transform="translate(14.7143 9) rotate(-180)"/>
                                     </clipPath>
                                     </defs>
                                 </svg>                                    
@@ -252,51 +324,53 @@
                 <p class="footer__description">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
                 <p class="footer__copyright">©Trafalgar PTY LTD 2020. All rights reserved</p>
             </div>
-            <ul class="footer__nav-list">
-                <p>Company</p>
-                <li class="footer__nav-item">
-                    <a href="#">About</a>
-                </li>
-                <li class="footer__nav-item">
-                    <a href="#">Testimonials</a>
-                </li>
-                <li class="footer__nav-item">
-                    <a href="#">Find a doctor</a>
-                </li>
-                <li class="footer__nav-item">
-                    <a href="#">Apps</a>
-                </li>
-            </ul>
-            <ul class="footer__nav-list">
-                <p>Region</p>
-                <li class="footer__nav-item">
-                    <a href="#">Indonesia</a>
-                </li>
-                <li class="footer__nav-item">
-                    <a href="#">Singapore</a>
-                </li>
-                <li class="footer__nav-item">
-                    <a href="#">Hongkong</a>
-                </li>
-                <li class="footer__nav-item">
-                    <a href="#">Canada</a>
-                </li>
-            </ul>
-            <ul class="footer__nav-list">
-                <p>Help</p>
-                <li class="footer__nav-item">
-                    <a href="#">Help center</a>
-                </li>
-                <li class="footer__nav-item">
-                    <a href="#">Contact support</a>
-                </li>
-                <li class="footer__nav-item">
-                    <a href="#">Instructions</a>
-                </li>
-                <li class="footer__nav-item">
-                    <a href="#">How it works</a>
-                </li>
-            </ul>
+            <div class="footer__nav-wrapper">
+                <ul class="footer__nav-list">
+                    <p>Company</p>
+                    <li class="footer__nav-item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#">Testimonials</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#">Find a doctor</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#">Apps</a>
+                    </li>
+                </ul>
+                <ul class="footer__nav-list">
+                    <p>Region</p>
+                    <li class="footer__nav-item">
+                        <a href="#">Indonesia</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#">Singapore</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#">Hongkong</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#">Canada</a>
+                    </li>
+                </ul>
+                <ul class="footer__nav-list">
+                    <p>Help</p>
+                    <li class="footer__nav-item">
+                        <a href="#">Help center</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#">Contact support</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#">Instructions</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#">How it works</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

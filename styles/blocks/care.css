@@ -1,20 +1,12 @@
 .section__tagline--care-tagline {
-    font-size: var(--h2);
-    margin: 0 0 25px 0;
-    text-align: left;
-    font-weight: 700;
-    line-height: var(--line-height);
-}
-
-.section__tagline--care-tagline::after {
-    display: none;
+    font-size: var(--h1)
 }
 
 .section__description--care-description {
     text-align: left;
-    margin: 0 0 45px 0;
-    font-size: 22px;
-    line-height: 32px;
+    margin: 0 0 40px 0;
+    font-size: var(--main-text);
+    line-height: 30px;
 }
 
 .section__btn--care-btn {
