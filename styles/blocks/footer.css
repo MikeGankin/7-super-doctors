@@ -20,11 +20,10 @@
 }
 
 .footer__nav-item {
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
 }
 
 .footer__nav-item a {
-    display: inline-block;
     font-weight: 300;
     font-size: 18px;
     color: #FFFFFF;
@@ -52,7 +51,7 @@
 
 .footer__nav-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 147px);
+    grid-template-columns: repeat(auto-fit, 205px);
     justify-content: space-between;
     gap: 20px;
 }

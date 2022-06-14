@@ -11,28 +11,29 @@ const menu = document.querySelector('.menu__list');
 const toggleButtons = (btn) => {
   links.forEach((item) => {
     item.classList.remove('active');
+    item.style.backgroundColor = '';
+    item.style.color = '';
     item.querySelector('.dropdown-arrow').style.transform = '';
     item.querySelector('.dropdown-arrow').style.fill = '';
   });
   btn.classList.add('active');
+  btn.style.backgroundColor = '#458FF6';
+  btn.style.color = 'white';
   btn.querySelector('.dropdown-arrow').style.transform = 'rotate(180deg)';
   btn.querySelector('.dropdown-arrow').style.fill = 'white';
 };
 
-const toggleLists = (list) => {
+const toggleLists = (list, opened, closed, timeOfAnimation) => {
   dropdowns.forEach((item) => {
-    item.classList.remove('opened');
+    console.log(item);
+    setTimeout(() => {
+      item.classList.remove(opened);
+      item.classList.add(closed);
+    }, timeOfAnimation);
   });
-  list.classList.add('opened');
+  list.classList.add(opened);
+  list.classList.remove(closed);
 };
-
-// listDesctop.addEventListener('click', (e) => {
-//   let target = e.target;
-//   if (target.classList.contains('item-dropdown__btn')) {
-//       toggleButtons(target);
-//       toggleLists(target.nextElementSibling);
-//   }
-// });
 
 const toggleMenu = (element, opened, closed, timeOfAnimation) => {
   if (!element.classList.contains(opened)) {
@@ -48,16 +49,24 @@ const toggleMenu = (element, opened, closed, timeOfAnimation) => {
     document.querySelector('.line1').style.transform = '';
     document.querySelector('.line2').style.transform = '';
     document.querySelector('.line3').style.transform = '';
-    window.setTimeout(() => {
+    setTimeout(() => {
       element.classList.remove(opened);
       document.querySelector('.body').classList.remove('no-scroll');
     }, timeOfAnimation);
   }
 };
 
-burger.addEventListener('click', () => {
-  toggleMenu(menu, 'menu-opened', 'menu-closed', 400)
-})
+menu.addEventListener('click', (e) => {
+  let target = e.target;
+  if (target.classList.contains('item-dropdown__btn')) {
+    toggleButtons(target);
+    toggleLists(target.nextElementSibling, 'dropdown-opened', 'dropdown-closed', 400);
+  }
+});
+
+// burger.addEventListener('click', () => {
+//   toggleMenu(menu, 'menu-opened', 'menu-closed', 400)
+// })
 
 window.addEventListener('scroll', () => {
   dropdowns.forEach((item) => {

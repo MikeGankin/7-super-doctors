@@ -15,7 +15,7 @@
             <img src="img/logo.svg" alt="логотип">
         </div>
         <nav class="menu">
-            <ul class="menu__list">
+            <ul class="menu__list menu-opened">
                 <li class="menu__item">
                     <a class="menu__link" href="#">Главная</a>
                 </li>
@@ -28,7 +28,7 @@
                                 </g>
                                 </svg>
                         </button>
-                    <ul class="menu__dropdown dropdown" data-target="one">
+                    <ul class="menu__dropdown dropdown dropdown-closed" data-target="one">
                         <li class="dropdown__item">
                             <a class="dropdown__link" href="#">Стоматолог</a>
                         </li>
@@ -56,7 +56,7 @@
                                 </g>
                                 </svg>
                         </button>
-                    <ul class="menu__dropdown dropdown" data-target="one">
+                    <ul class="menu__dropdown dropdown dropdown-closed" data-target="two">
                         <li class="dropdown__item">
                             <a class="dropdown__link" href="#">Стоматолог</a>
                         </li>
@@ -84,7 +84,7 @@
                                 </g>
                                 </svg>
                         </button>
-                    <ul class="menu__dropdown dropdown" data-target="one">
+                    <ul class="menu__dropdown dropdown dropdown-closed" data-target="three">
                         <li class="dropdown__item">
                             <a class="dropdown__link" href="#">Стоматолог</a>
                         </li>
@@ -321,53 +321,54 @@
         <div class="footer__container container">
             <div class="footer__logo">
                 <img src="img/footer-logo.svg" alt="логотип">
-                <p class="footer__description">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
-                <p class="footer__copyright">©Trafalgar PTY LTD 2020. All rights reserved</p>
+                <p class="footer__description">7 Докторов предоставляет прогрессивное медицинское обслуживание, 
+                    доступное на мобильных устройствах и в Интернете.</p>
+                <p class="footer__copyright">©7 Докторов PTY LTD 2020. Все права сохранены</p>
             </div>
             <div class="footer__nav-wrapper">
                 <ul class="footer__nav-list">
-                    <p>Company</p>
+                    <p>О компании</p>
                     <li class="footer__nav-item">
-                        <a href="#">About</a>
+                        <a href="#">О нас</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#">Testimonials</a>
+                        <a href="#">Отзывы</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#">Find a doctor</a>
+                        <a href="#">Поиск специалиста</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#">Apps</a>
-                    </li>
-                </ul>
-                <ul class="footer__nav-list">
-                    <p>Region</p>
-                    <li class="footer__nav-item">
-                        <a href="#">Indonesia</a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a href="#">Singapore</a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a href="#">Hongkong</a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a href="#">Canada</a>
+                        <a href="#">Приложения</a>
                     </li>
                 </ul>
                 <ul class="footer__nav-list">
-                    <p>Help</p>
+                    <p>Регионы</p>
                     <li class="footer__nav-item">
-                        <a href="#">Help center</a>
+                        <a href="#">Индонезия</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#">Contact support</a>
+                        <a href="#">Сингапур</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#">Instructions</a>
+                        <a href="#">Гонконг</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#">How it works</a>
+                        <a href="#">Россия</a>
+                    </li>
+                </ul>
+                <ul class="footer__nav-list">
+                    <p>Помощь</p>
+                    <li class="footer__nav-item">
+                        <a href="#">Колл-центр</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#">Техническая поддержка</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#">Инструкции</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#">Как это работает?</a>
                     </li>
                 </ul>
             </div>

@@ -6,16 +6,19 @@
     background-position: 150% 50%; */
 }
 
-/* @media (min-resolution: 2dppx) {
+@media (min-width: 768px) {
     .articles {
-        background-image: url('/img/bg-element-2@2x.png');
+        background-image: url('/img/bg-element-2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 150% 50%;
     }
-}; */
 
-.articles__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @media (min-resolution: 2dppx) {
+        .articles {
+            background-image: url('/img/bg-element-2@2x.png');
+        }
+    };
 }
 
 .artcles__list {

@@ -1,5 +1,5 @@
 /* Анимации */
-@keyframes fadeIn {
+@keyframes menuFadeIn {
     0% {
         transform: translateX(100%);
     }
@@ -8,14 +8,34 @@
     }
 }
 
-@keyframes fadeOut {
+@keyframes menuFadeOut {
     0% {
-        /* opacity: 1; */
         transform: translateX(0);
     }
     100% {
-        /* opacity: 0; */
         transform: translateX(100%);
+    }
+}
+
+@keyframes dropDownFadeIn {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes dropDownFadeOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-10%);
+        opacity: 0;
     }
 }
 
@@ -27,17 +47,17 @@
     height: 20px;
 }
 
-.menu__dropdown {
-    display: none;
-}
-
 .menu__button {
     z-index: 1;
 }
 
+.dropdown {
+    display: none;
+}
+
 .menu__list {
     position: absolute;
-    top: 84px;
+    top: 104px;
     left: 0;
     background-color: #fdfdfd;
     width: 100%;
@@ -67,6 +87,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 .menu__link {
@@ -78,9 +100,9 @@
 .menu__link:hover, 
 .item-dropdown__btn:hover {
     background-color: var(--main-blue);
-    border-radius: 20px;
     cursor: pointer;
     color: white;
+    border-radius: 20px;
 }
 
 .logo {
@@ -115,8 +137,9 @@
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 20px;
+    top: 48%;
     right: 30px;
+    transform: translateY(-50%);
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -165,12 +188,35 @@
     transform: rotate(-45deg);
 }
 
+.dropdown__link {
+    padding: 15px;
+    color: var(--gray);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: fit-content;
+}
+
+.dropdown__item {
+    margin-bottom: 10px;
+}
+
 .menu-opened {
-    animation: fadeIn var(--transition);
+    animation: menuFadeIn var(--transition);
     animation-fill-mode: forwards;
     display: block;
 }
 
 .menu-closed {
-    animation: fadeOut var(--transition);
+    animation: menuFadeOut var(--transition);
+}
+
+.dropdown-opened {
+    animation: dropDownFadeIn var(--transition);
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+.dropdown-closed {
+    animation: dropDownFadeOut var(--transition);
 }
